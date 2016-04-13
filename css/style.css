@@ -1,0 +1,319 @@
+/*
+Project Name: Matched
+Client: FEWD22 (Final Project)
+Author: Liz Calka
+Developer @GA in DC
+*/
+
+
+/******************************************
+/* FONTS
+/*******************************************/
+
+@font-face {
+    font-family: 'aqua_grotesqueregular';
+    src: url('../fonts/aqua-webfont.eot');
+    src: url('../fonts/aqua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aqua-webfont.woff2') format('woff2'),
+         url('../fonts/aqua-webfont.woff') format('woff'),
+         url('../fonts/aqua-webfont.ttf') format('truetype'),
+         url('../fonts/aqua-webfont.svg#aqua_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+/* Box Sizing */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+body {
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: 300;
+  color: #3a3a3a;
+  background-color: #ffffff;
+  line-height: 28px;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+a {
+  color: #0091ea;
+  text-decoration: none;
+}
+
+header {
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 140px;
+  padding: 30px 0;
+}
+
+h1 {
+  font-family: 'Abril Fatface';
+  letter-spacing: .03em;
+  font-size: 36px;
+  color: #ffffff;
+  padding: 20px;
+  border: 2px solid #ffffff;
+}
+
+h2 {
+  font-family: 'aqua_grotesqueregular';
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: .17em;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'aqua_grotesqueregular';
+  font-size: 40px;
+  color: #565656;
+  letter-spacing: .17em;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'aqua_grotesqueregular';
+  font-size: 40px;
+  color: #f33b5f;
+  letter-spacing: .08em;
+  line-height: 45px;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+article {
+  border-bottom: 1px solid #121212;
+  padding: 30px 0;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: OpenSans;
+  color: #c5c5c5;
+  background-color: #1b1b1b;
+  border: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #e2e2e2;
+  color: #ffffff;
+  padding: 50px 0 30px 0;
+  font-family: 'Abril Fatface';
+  letter-spacing: .04em;
+  font-size: 20px;
+  height: 130px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+main {
+  padding: 15px 0 0 0;
+  padding-bottom: 130px;
+}
+
+.ampersand {
+  font-family: 'Abril Fatface';
+  font-size: 80px;
+  margin: 0 15px;
+  position: relative;
+  top: 15px;
+}
+
+.selectSign {
+  text-align: center;
+  margin: 70px 0 90px 0;
+}
+
+.theGood {
+  background-color: #e2e2e2;
+  margin-top: 70px;
+  padding: 30px 0;
+}
+
+.theBad {
+  background-color: #1b1b1b;
+  color: #c5c5c5;
+  padding: 30px 0;
+}
+
+.recommendations {
+  text-align: center;
+  color: #373737;
+  font-size: 35px;
+  font-family: 'Abril Fatface';
+  padding: 60px 0 60px 0;
+}
+
+.randomQuote {
+  text-align: center;
+  color: #757575;
+  font-size: 35px;
+  font-family: 'Abril Fatface';
+  padding: 60px 0 60px 0;
+  background-color: #1b1b1b;
+}
+
+#day {
+  height: 66px;
+  font-family: OpenSans;
+  font-size: 17px;
+  width: 80px;
+  padding-left: 15px;
+  border: 1px #e2e2e2 solid;
+  box-shadow: none;
+  margin-right: 40px;
+}
+
+#zodiacSign {
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  font-family: OpenSans;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+}
+
+a:hover {
+  color: #3d3d3d;
+  font-weight: 800;
+}
+
+.select {
+  font-family: OpenSans;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+}
+
+.quoter {
+  color: #f23a5e;
+}
+
+#resultImage {
+  text-align: center;
+  margin-top: 50px;
+}
+/* dropdown styling */
+
+.select select {
+  outline: none;
+  -webkit-appearance: none;
+  display: block;
+  padding: 20px;
+  margin: 0;
+  width: 200px;
+
+  transition: border-color 0.2s;
+  border: 5px solid #fff;
+  border-radius: 5px;
+
+  background: #f1f1f1;
+  color: #555;
+  line-height: normal;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  cursor: pointer;
+}
+
+/* dropdown arrow styling */
+
+.select .arrow {
+  position: absolute;
+  top: 30%;
+  right: 28px;
+  font-size: 25px;
+  color: #ce163a;
+  pointer-events: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+.container {
+  width: 72%;
+  margin: auto;
+}
+
+logo {
+  float: left;
+  width: 195px;
+  color: #ffffff;
+}
+
+nav {
+  float: right;
+  width: 50%;
+  padding-top: 20px;
+}
