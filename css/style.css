@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   font-weight: 300;
   color: #555555;
@@ -135,7 +135,7 @@ nav {
 
 nav a {
   color: #ffffff;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
@@ -156,7 +156,7 @@ p {
 button {
   font-size: 18px;
   font-weight: 300;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   color: #c5c5c5;
   background-color: #1b1b1b;
   border: none;
@@ -229,7 +229,7 @@ input, textarea, button {
 }
 
 .select {
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   position: relative;
   display: inline-block;
@@ -238,7 +238,7 @@ input, textarea, button {
 
 #day {
   height: 66px;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   width: 80px;
   padding-left: 15px;
