@@ -141,7 +141,6 @@ nav a {
   text-decoration: none;
   letter-spacing: .2em;
   float: right;
-  width: 50%;
   padding-top: 20px;
 }
 
@@ -208,6 +207,13 @@ input, textarea, button {
   padding: 30px 0;
 }
 
+.calculator {
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 30px 0;
+  text-align: center;
+}
+
 .randomQuote {
   text-align: center;
   color: #bebebe;
@@ -270,9 +276,13 @@ input, textarea, button {
   color: #ffffff;
 }
 
-#resultImage {
+#result {
   text-align: center;
   margin-top: 50px;
+  color: #3d3d3d;
+  font-size: 35px;
+  line-height: 40px;
+  font-family: 'Abril Fatface';
 }
 
 /* dropdown styling */
