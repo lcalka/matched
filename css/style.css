@@ -70,7 +70,7 @@ body {
   font-family: OpenSans;
   font-size: 17px;
   font-weight: 300;
-  color: #3a3a3a;
+  color: #555555;
   background-color: #ffffff;
   line-height: 28px;
   margin:0;
@@ -97,11 +97,13 @@ h1 {
   color: #ffffff;
   padding: 20px;
   border: 2px solid #ffffff;
+  height: 70px;
 }
 
 h2 {
   font-family: 'aqua_grotesqueregular';
   font-size: 40px;
+  line-height: 43px;
   color: #ffffff;
   letter-spacing: .17em;
   margin: 40px 0px;
@@ -131,13 +133,25 @@ nav {
   text-align: right;
 }
 
-p {
-  margin-bottom: 20px;
+nav a {
+  color: #ffffff;
+  font-family: OpenSans;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+  float: right;
+  width: 50%;
+  padding-top: 20px;
 }
 
-article {
-  border-bottom: 1px solid #121212;
-  padding: 30px 0;
+a:hover {
+  border-bottom: 2px solid #3d3d3d;
+  padding-bottom: 3px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 button {
@@ -153,7 +167,7 @@ button {
 }
 
 footer {
-  background-color: #e2e2e2;
+  background-color: #3d3d3d;
   color: #ffffff;
   padding: 50px 0 30px 0;
   font-family: 'Abril Fatface';
@@ -171,6 +185,10 @@ main {
   padding-bottom: 130px;
 }
 
+input, textarea, button {
+  outline: none;
+}
+
 .ampersand {
   font-family: 'Abril Fatface';
   font-size: 80px;
@@ -184,33 +202,32 @@ main {
   margin: 70px 0 90px 0;
 }
 
-.theGood {
+.matchResults {
   background-color: #e2e2e2;
   margin-top: 70px;
   padding: 30px 0;
 }
 
-.theBad {
-  background-color: #1b1b1b;
-  color: #c5c5c5;
-  padding: 30px 0;
-}
-
-.recommendations {
-  text-align: center;
-  color: #373737;
-  font-size: 35px;
-  font-family: 'Abril Fatface';
-  padding: 60px 0 60px 0;
-}
-
 .randomQuote {
   text-align: center;
-  color: #757575;
+  color: #bebebe;
   font-size: 35px;
+  line-height: 40px;
   font-family: 'Abril Fatface';
   padding: 60px 0 60px 0;
   background-color: #1b1b1b;
+}
+
+.quoter {
+  color: #f23a5e;
+}
+
+.select {
+  font-family: OpenSans;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  width: 225px;
 }
 
 #day {
@@ -228,35 +245,36 @@ main {
   margin-bottom: 40px;
 }
 
-nav a {
+#sign1, #sign2, #month {
+  width: 225px;
+}
+
+#matchMe {
+  width: 545px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 20px;
+  letter-spacing: .15em;
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 20px;
+  letter-spacing: .15em;
+  height: 67px;
+}
+
+#matchMe:hover, #submit:hover {
+  background-color: #3d3d3d;
   color: #ffffff;
-  font-family: OpenSans;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .2em;
-}
-
-a:hover {
-  color: #3d3d3d;
-  font-weight: 800;
-}
-
-.select {
-  font-family: OpenSans;
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-}
-
-.quoter {
-  color: #f23a5e;
 }
 
 #resultImage {
   text-align: center;
   margin-top: 50px;
 }
+
 /* dropdown styling */
 
 .select select {
@@ -285,9 +303,9 @@ a:hover {
 
 .select .arrow {
   position: absolute;
-  top: 30%;
+  top: 32%;
   right: 28px;
-  font-size: 25px;
+  font-size: 30px;
   color: #ce163a;
   pointer-events: none;
 }
@@ -312,8 +330,6 @@ logo {
   color: #ffffff;
 }
 
-nav {
-  float: right;
-  width: 50%;
-  padding-top: 20px;
+.hidden {
+  display: none;
 }
